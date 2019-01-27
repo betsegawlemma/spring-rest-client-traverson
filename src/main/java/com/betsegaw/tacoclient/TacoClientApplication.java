@@ -21,7 +21,6 @@ public class TacoClientApplication {
 		SpringApplication.run(TacoClientApplication.class, args);
 	}
 	
-
 	@Bean
 	public Traverson traverson() {
 		return new Traverson(URI.create("http://localhost:8080/api"),MediaTypes.HAL_JSON);
